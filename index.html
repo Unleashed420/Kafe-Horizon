@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kafe Horizon</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">Kafe Horizon</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#contact">Kontak</a></li>
+          <li><button id="darkModeToggle">🌙</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <h1>Selamat Datang di Kafe Horizon</h1>
+      <p>Dari biji lokal, untuk rasa yang mendunia</p>
+      <a href="#menu" class="cta">Lihat Menu</a>
+    </section>
+
+    <section id="menu" class="menu-section">
+      <h2>Menu Kami</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="assets/image/susu_gula_aren.jpeg" alt="Kopi Susu Gula Aren" />
+          <h3>Kopi Susu Gula Aren</h3>
+          <p>Rp18.000</p>
+        </div>
+        <div class="menu-item">
+          <img src="assets/image/kopi espresso gelas-960x540.jpg" alt="Espresso" />
+          <h3>Espresso</h3>
+          <p>Rp15.000</p>
+        </div>
+        <div class="menu-item">
+          <img src="assets/image/matcha_latte.jpg" alt="Matcha Latte" />
+          <h3>Matcha Latte</h3>
+          <p>Rp22.000</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2>Tentang Kami</h2>
+      <p>
+        Kami menggunakan 100% biji kopi asli Indonesia yang disangrai dengan
+        cinta dan diseduh dengan semangat lokal.
+      </p>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Kontak</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Nama" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea
+          name="message"
+          placeholder="Pesan Anda..."
+          required
+        ></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+      <a href="https://wa.me/6285779212809" target="_blank" class="wa-button"
+        >Hubungi via W5779212809
+      >
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Kafe Horizon. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
