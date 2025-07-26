@@ -29,6 +29,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 999;
+  flex-wrap: wrap;
 }
 
 .navbar .logo {
@@ -41,6 +42,9 @@ body {
   list-style: none;
   gap: 1rem;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.5rem;
 }
 
 .navbar a,
@@ -126,6 +130,7 @@ body {
   padding: 0.75rem;
   border-radius: 6px;
   border: 1px solid #ccc;
+  font-size: 1rem;
 }
 
 .contact-section button {
@@ -147,6 +152,7 @@ body {
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1rem;
 }
 
 /* Footer */
@@ -158,4 +164,49 @@ footer {
   font-size: 0.9rem;
   margin-top: 3rem;
   border-radius: 0 !important;
+}
+
+/* Responsive - Smartphone */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+    padding-top: 0.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero .cta {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .menu-item h3 {
+    font-size: 1rem;
+  }
+
+  .wa-button {
+    width: 100%;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .contact-section input,
+  .contact-section textarea {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 0.75rem;
+  }
 }
