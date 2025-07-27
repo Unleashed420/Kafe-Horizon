@@ -6,6 +6,13 @@ toggleBtn.addEventListener("click", () => {
   localStorage.setItem("theme", mode);
 });
 
+// Hamburger navbar
+function toggleMenu() {
+  const navList = document.querySelector('.navbar ul');
+  navList.classList.toggle('active');
+}
+
+
 // Load saved theme
 window.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme");
