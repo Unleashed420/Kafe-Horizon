@@ -18,18 +18,17 @@ body {
   color: #f0f0f0;
 }
 
-/* Navbar */
+/* Navbar full toggle all screen */
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 1rem 2rem;
   background-color: #6b4f3b;
   color: #fff;
   position: sticky;
   top: 0;
   z-index: 999;
-  flex-wrap: wrap;
 }
 
 .navbar .logo {
@@ -38,25 +37,33 @@ body {
 }
 
 .menu-toggle {
-  display: none;
+  margin-left: auto;
   font-size: 1.5rem;
   background: none;
   border: none;
   color: #fff;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .navbar ul {
-  display: flex;
-  list-style: none;
-  gap: 1rem;
-  align-items: center;
+  display: none;
+  flex-direction: column;
+  background-color: #6b4f3b;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
 }
 
 .navbar ul.active {
   display: flex;
-  flex-direction: column;
-  width: 100%;
+}
+
+.navbar ul li {
+  margin: 0.5rem 0;
 }
 
 .navbar a,
